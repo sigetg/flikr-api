@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+  <% @photos.each do |photo| %>
+    <div class="col-md-auto">
+      <img src="<%= Flickr.url_n(photo) %>"/>
+    </div>
+  <% end %>
+  </div>
+</div>
